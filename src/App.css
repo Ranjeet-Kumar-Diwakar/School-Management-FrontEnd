@@ -1,0 +1,67 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+.primary-button {
+     height: 50px;
+    width: 120px;
+    margin-right: 50px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: 700;
+    color: black;
+    transition: 1s;
+}
+
+
+.yellow-button {
+    height: 40px;
+    width: 100px;
+    background-color: #b6b622;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.yellow-button:hover {
+
+    background-color: #e1e114;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: 1s;
+     box-shadow: 0 8px 20px #9ff10726;
+}
+
+.secondary-button {
+    background: transparent;
+    color: #ffffff;
+    border: 1.5px solid #ffffffb3;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.secondary-button:hover {
+    background: #ffffff1f;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #ffffff26;
+    border-radius: 15px;
+}

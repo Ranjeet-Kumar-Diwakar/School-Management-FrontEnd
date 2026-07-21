@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.footer-container {
+    min-height: 40vh;
+    width: 100%;
+    background-color: #060650;
+    margin-top: 15px;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 940px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .mobile-view{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+
+    .mobile-view ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-view li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin-bottom: 20px;
+    }
+
+    .quick-links h3{
+        text-align: center;
+    }
+
+    .contact-icons{
+        height: 60px;
+        width: 60px;
+    }
+
+   
+}
+
+.school-logo {
+    max-width: 350px;
+    display: flex;
+}
+
+.logo-image img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.school-heading h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.school-heading p {
+    font-size: 12px;
+}
+
+.icon-list {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.icon-list li {
+    height: 50px;
+    width: 60px;
+    background-color: #414191;
+    margin-right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.icon-list li img {
+    width: 30px;
+    color: white;
+    margin: 10px;
+    filter: brightness(0) invert(1);
+    
+    
+}
+
+.quick-links ul li  {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+
+}
+
+.quick-links ul li:hover{
+    color: #ffb300;
+    font-size: 15px;
+}
+
+.contact-info{
+    max-width: 350px;
+}
+
+.contact-info ul li {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+
+    
+}
+
+.contact-info ul li p{
+    margin-left: 10px;
+}
+
+.contact-icons{
+    width: 50px;
+}
+
+
+

@@ -1,0 +1,389 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efe7e7;
+    margin: auto;
+}
+
+.school-logo {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px 20px;
+    
+}
+
+.sc-heading h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #7109d2;
+}
+
+.sc-heading p {
+    font-size: 12px;
+}
+
+.form-container{
+    height: 130vh;
+    width: 70vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20%;
+    border-radius: 20px;
+    
+}
+
+.left-section {
+    height: 130vh;
+    width: 29vw;
+     background:
+         linear-gradient(
+        to bottom,
+        #1e6fe8cc 0%,
+        #0a3d91d9 26%,
+        #041c4dee 60%
+    ),
+        url("/images/building.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+   
+}
+
+
+
+
+/* Keep content above overlay */
+.left-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===========================
+   Greeting
+=========================== */
+.greeting{
+    margin-top: 50px;
+    
+}
+.greeting h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+    position: relative;
+    color: #fff;
+}
+
+/* Yellow Line */
+.greeting h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    background: #ffc107;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-left: 70px;
+}
+
+.greeting p {
+    width: 240px;
+    line-height: 1.8;
+    color: rgba(255,255,255,.92);
+    font-size: 14px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+/* ===========================
+    Facilities
+=========================== */
+
+.facilities{
+    margin-top:50px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+/* Icon Circle */
+
+.icon-section {
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 18px;
+
+    background: #ffffff0d;
+    backdrop-filter: blur(6px);
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    color: white;
+}
+
+
+
+.left-section .content h5 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.left-section .content p {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* ===========================
+      Quote
+=========================== */
+
+.quote{
+    margin-top:60px;
+    padding-left:10px;
+    margin: 0px 20px;
+    
+}
+
+.quote p{
+    font-style: italic;
+    font-size:14px;
+    color:rgba(255,255,255,.92);
+    line-height:1.8;
+    position:relative;
+    margin-top: 100px;
+    margin: 20px 20px;
+    
+}
+
+/* Left Quote */
+.quote p::before{
+    content:"❝";
+    color:#ffc107;
+    font-size:30px;
+    position:absolute;
+    left:-18px;
+    top:-8px;
+   
+}
+
+/* Right Quote */
+.quote p::after{
+    content:"❞";
+    color:#ffc107;
+    font-size:30px;
+}
+
+.quote h5{
+    color:#ffc107;
+    text-align:right;
+    margin-top:12px;
+    font-size:17px;
+    font-weight:600;
+}
+
+
+/* right side login form */
+
+.right-section {
+    height: 130vh;
+    width: 40vw;
+    background-color: #fff;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@media (max-width: 750px) {
+    .left-section{
+        display: none;
+    }
+}
+
+.heading {
+    margin-top: 70px;
+    text-align: left;
+    margin-left: 40px;
+
+}
+
+.heading h2 {
+    color: #030341;
+    font-weight: 600;
+}
+
+.heading p {
+    color: #6a6565;
+    font-size: 14px;
+}
+
+.input-field{
+    
+    margin-top: 50px;
+}
+
+.email-input, .password-input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.password-input{
+    margin-top: 20px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.input-field label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #262222;
+    /* margin: 10px 10px; */
+}
+
+
+#email, #password {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.show-password{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.show-password button {
+    margin-right: 70px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* important links */
+
+.imp-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px 30px;
+}
+
+.checkbox label {
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.forget-password a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-btn{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.login-btn button {
+    background-color: #1a1abc;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.register-user {
+    height: 15vh;
+    width: 35vw;
+    background-color: #fbf0f0;
+    margin: auto;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+.register-user a, p  {
+    text-decoration: none;  
+    margin: 5px 20px;
+    font-size: 14px;
+
+}
+.register-user p{
+    color: #6a6565;
+}
+
+.privacy{
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    
+}
+
+.security icon{
+    width: 15px;
+    height: 15px;
+    background: none;
+   
+}
+
+.secure-login, .protected-data {
+    display: flex;
+    font-size: 12px;
+    
+
+}
+
+.privacy p {
+    color: #6a6565;
+}
+
+/* left & right container decoration */
+
+.left-section .right-section {
+    border-radius: 10px;
+}

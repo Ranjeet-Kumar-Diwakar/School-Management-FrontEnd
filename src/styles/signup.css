@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f8ff;
+}
+
+/* ==========================
+        MAIN CONTAINER
+=========================== */
+
+.signup-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+
+    background:
+        radial-gradient(circle at top, #dfeeff, #f7f9fc 55%);
+}
+
+/* ==========================
+        CARD
+=========================== */
+
+.signup-form-container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, .08);
+}
+
+/* ==========================
+      HEADING
+=========================== */
+
+.signup-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.signup-heading h2 {
+    font-size: 42px;
+    color: #14213d;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.signup-heading p {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+/* ==========================
+      FORM
+=========================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ==========================
+      INPUT FIELD
+=========================== */
+
+.signup-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.signup-field label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.signup-field input,
+.signup-field select {
+
+    width: 100%;
+    height: 55px;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 10px;
+
+    padding: 0 18px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: .3s;
+}
+
+.signup-field input:focus,
+.signup-field select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+}
+
+/* remove arrow styling */
+
+.signup-field select {
+
+    cursor: pointer;
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23555' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+
+    background-position: right 18px center;
+
+    background-size: 20px;
+}
+
+/* ==========================
+      GENDER
+=========================== */
+
+.select-gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 6rem;
+    margin-right: 12rem;
+}
+
+.male input,
+.female input {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.select-gender .male label,
+.select-gender .female label {
+    font-size: 20px;
+}
+
+
+/* ==========================
+      PASSWORD
+=========================== */
+
+.signup-password {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.signup-password label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.signup-password input {
+
+    width: 100%;
+    height: 55px;
+
+    border: 1px solid #d8dee8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    padding: 0 55px 0 18px;
+
+    transition: .3s;
+}
+
+.signup-password input:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+}
+
+/* eye icon */
+
+.show-password {
+
+    position: absolute;
+
+    right: 15px;
+
+    bottom: 12px;
+}
+
+.show-password button {
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    color: #6b7280;
+}
+
+/* ==========================
+      CHECKBOX
+=========================== */
+
+.privacy-policy {
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.privacy-policy input {
+
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.privacy-policy label {
+    cursor: pointer;
+}
+
+/* ==========================
+      BUTTON
+=========================== */
+
+.signup-btn {
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.signup-btn:hover {
+    background: #1d4ed8;
+}
+
+/* ==========================
+      RESPONSIVE
+=========================== */
+
+@media(max-width:768px) {
+
+    .signup-form-container {
+
+        padding: 30px 25px;
+    }
+
+    .signup-heading h2 {
+
+        font-size: 32px;
+    }
+
+    .signup-heading p {
+
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .signup-form-container {
+
+        padding: 25px 18px;
+    }
+
+    .signup-heading h2 {
+
+        font-size: 28px;
+    }
+
+    .signup-field input,
+    .signup-field select,
+    .password-input input {
+
+        height: 50px;
+    }
+
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.success {
+    color: #0b7543;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* otp verification realted field */
+
+.verification{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verify-btn {
+    height: 55px;
+    width: 130px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.otp-section button {
+    margin-left: 36px;
+}
