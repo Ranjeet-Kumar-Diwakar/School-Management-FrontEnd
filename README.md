@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -74,3 +75,7 @@ Parents Corner
 Contact Us
 
 Login
+=======
+# School-Management-FrontEnd
+This is a Frontend of my full stack spring boot based School mangement System This is currently under Development
+>>>>>>> 1dab2eec46084733ed304b4a27706971d5728453
