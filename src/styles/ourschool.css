@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background-color: #f4f8ff; */
+
+    text-wrap: wrap;
+    margin: 15px 30px;
+
+);
+}
+
+
+.about-header {
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.about-header h1 {
+    color: #5757bd;
+}
+
+.about-header p {
+    color: #3d3dca;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.about-body h2 {
+    color: #5757bd;
+    margin: 15px;
+    text-align: left;
+}

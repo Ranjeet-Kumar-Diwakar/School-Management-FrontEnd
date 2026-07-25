@@ -1,6 +1,6 @@
 import { Menu, X } from "lucide-react"
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -26,12 +26,78 @@ const Navbar = () => {
 
                 <div className="nav-links">
                     <ul>
-                        <li>Home</li>
-                        <li>About us</li>
-                        <li>Acadmics</li>
-                        <li>Admissions</li>
-                        <li>Facilities</li>
-                        <li>Examination</li>
+                        <li>
+                            <NavLink to={"/"}>Home</NavLink>
+                        </li>
+
+
+                        <li className="dropdown">
+                            About us
+
+                            <ul className="dropdown-menu" >
+                                <li><Link to={"/our-school"}>Our School</Link></li>
+                                <li><Link to={"/vision-mission"} >Missions & Visions</Link></li>
+                                <li><Link to={"/faculty"}>Faculty</Link></li>
+                                <li><Link to={"/infrastructure"}>Infrastructure</Link></li>
+                                <li><Link to={"/privacy-policy"}>Privacy Policy</Link></li>
+                            </ul>
+                        </li>
+
+                        <li className="dropdown">
+                            Acadmics
+
+                            <ul className="dropdown-menu" >
+                                <li><Link>Curriculum</Link></li>
+                                <li><Link>Classes</Link></li>
+                                <li><Link>Departments</Link></li>
+                                <li><Link>Acadmic Calender</Link></li>
+                                <li><Link>Syllabus</Link></li>
+                                <li><Link>Courses</Link></li>
+                            </ul>
+                        </li>
+
+                        <li className="dropdown">
+                            Admissions
+
+                            <ul className="dropdown-menu" >
+                                <li><Link>Registration</Link></li>
+                                <li><Link>Apply Online</Link></li>
+                                <li><Link>Fee Structure</Link></li>
+                                <li><Link>Required Documents</Link></li>
+                                <li><Link>Addmission Form</Link></li>
+                                
+                            </ul>
+                        </li>
+
+                       
+                        <li className="dropdown">
+                            Facilities
+
+                            <ul className="dropdown-menu" >
+                                <li><Link>Smart Classes</Link></li>
+                                <li><Link>Library</Link></li>
+                                <li><Link>Science Labs</Link></li>
+                                <li><Link>Computer Labs</Link></li>
+                                <li><Link>Sports</Link></li>
+                                <li><Link>Transport</Link></li>
+                                <li><Link>Dispensary</Link></li>
+                                
+                            </ul>
+                        </li>
+
+                          <li className="dropdown">
+                                 Examination
+
+                            <ul className="dropdown-menu" >
+                                <li><Link>Exam Schedule</Link></li>
+                                <li><Link>Admit Card</Link></li>
+                                <li><Link>Result</Link></li>
+                                <li><Link>Rules & Regulations</Link></li>
+                                
+                                
+                            </ul>
+                        </li>
+
                         <li>Contact Us</li>
                     </ul>
                 </div>
