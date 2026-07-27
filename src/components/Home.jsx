@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar />
+           
             <Carousel />
             <MidSection />
             <Footer />

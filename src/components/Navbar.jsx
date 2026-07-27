@@ -35,11 +35,11 @@ const Navbar = () => {
                             About us
 
                             <ul className="dropdown-menu" >
-                                <li><Link to={"/our-school"}>Our School</Link></li>
-                                <li><Link to={"/vision-mission"} >Missions & Visions</Link></li>
-                                <li><Link to={"/faculty"}>Faculty</Link></li>
-                                <li><Link to={"/infrastructure"}>Infrastructure</Link></li>
-                                <li><Link to={"/privacy-policy"}>Privacy Policy</Link></li>
+                                <li><Link to={"/about/our-school"}>Our School</Link></li>
+                                <li><Link to={"/about/vision-mission"} >Missions & Visions</Link></li>
+                                <li><Link to={"/about/faculty"}>Faculty</Link></li>
+                                <li><Link to={"/about/infrastructure"}>Infrastructure</Link></li>
+                                <li><Link to={"/about/privacy-policy"}>Privacy Policy</Link></li>
                             </ul>
                         </li>
 

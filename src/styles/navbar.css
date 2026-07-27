@@ -1,11 +1,21 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .nav-container {
     height: 15vh;
-    width: 100vw;
+    width: 100%;
     /* border-bottom: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f4f8ff;
 }
 
 .menu-btn {

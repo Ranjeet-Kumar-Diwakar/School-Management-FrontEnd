@@ -19,30 +19,19 @@ import Faculty from './components/about-us/Faculty'
 import Infarastructure from './components/about-us/Infrastructure'
 import PrivacyPolicy from './components/about-us/PrivacyPolicy'
 import History from './components/about-us/History'
+import Navbar from './components/Navbar'
+import Carousel from './components/Carousel'
+import MidSection from './components/MidSection'
+import Footer from './components/Footer'
+import PageRoutes from './components/PageRoutes'
 
 function App() {
 
 
   return (
     <div>
-
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/success' element={<LoginSuccess />}/> 
-        <Route path='/our-school' element={<OurSchool />}/> 
-        <Route path='/vision-mission' element={<VisionMission />}/> 
-        <Route path='/faculty' element={<Faculty />}/> 
-        <Route path='/infrastructure' element={<Infarastructure />}/> 
-        <Route path='/privacy-policy' element={<PrivacyPolicy />}/> 
-
-      </Routes>
-
-     
-
-
-    </div>
+      <PageRoutes />
+    </div >
   )
 }
 
