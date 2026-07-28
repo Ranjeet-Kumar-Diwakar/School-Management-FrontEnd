@@ -8,8 +8,12 @@
     margin-top: 15vh;
 }
 
+.curr-container .image-section{
+    /* position: relative; */
+}
 
 .curr-container .image-section img {
+    display: block;
     position: absolute;
     width: 100%;
     height: 60vh;
@@ -52,3 +56,133 @@
     font-weight: 500;
     line-height: 30px;
 }
+
+.about-curriculum{
+    position: relative;
+    top: 62vh;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-curriculum h1{
+    color: #111167;
+}
+
+.curr-container .curr-structure{
+    position: relative;
+    margin-top: 60vh;
+    
+}
+
+.curr-container .curr-structure-heading h1{
+    text-align: center;
+    color: #111167;
+}
+
+.curr-structure .school-type-card{
+    height: 60vh;
+    width: 25%;
+    background-color: #e3e9ec;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.curr-container .curr-structure{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.curr-structure .school-type-card .curr-logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #add8e6;
+    text-align: center;
+    margin-left: 110px;
+}
+
+.curr-structure .school-type-card .curr-icon {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+    /* border-radius: 50%; */
+    /* background-color: red; */
+}
+
+.curr-structure .school-type-card h3, h5 {
+    color: #111167;
+    margin-top: 10px;
+}
+
+.curr-container .offer-subjet-section h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #111167;
+}
+
+
+
+/* tables */
+
+
+.curr-container .subject-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 40px 0;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    font-family: "Poppins", sans-serif;
+    margin-left: 7rem;
+    
+}
+
+.curr-container .subject-table thead{
+    background: #0b2b66;
+    color: #fff;
+   
+}
+
+.subject-table th{
+    padding: 18px 22px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subject-table td{
+    padding: 18px 22px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #444;
+    vertical-align: top;
+    text-align: left;
+}
+
+.subject-table td:first-child{
+    width: 22%;
+    font-weight: 600;
+    color: #0b2b66;
+}
+
+.subject-table tbody tr:nth-child(even){
+    background: #f8faff;
+}
+
+.subject-table tbody tr:hover{
+    background: #eef5ff;
+    transition: 0.3s ease;
+}
+
+.subject-table th:first-child{
+    border-right: 1px solid rgba(255,255,255,.2);
+}
+
+.subject-table td:first-child{
+    border-right: 1px solid #ececec;
+}
+
