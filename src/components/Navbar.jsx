@@ -47,12 +47,12 @@ const Navbar = () => {
                             Acadmics
 
                             <ul className="dropdown-menu" >
-                                <li><Link>Curriculum</Link></li>
-                                <li><Link>Classes</Link></li>
-                                <li><Link>Departments</Link></li>
-                                <li><Link>Acadmic Calender</Link></li>
-                                <li><Link>Syllabus</Link></li>
-                                <li><Link>Courses</Link></li>
+                                <li><Link to="/acadmics/curriculum">Curriculum</Link></li>
+                                <li><Link to="/acadmics/classes">Classes</Link></li>
+                                <li><Link to="/acadmics/department">Departments</Link></li>
+                                <li><Link to="/acadmics/acadmic-calender">Acadmic Calender</Link></li>
+                                <li><Link to="/acadmics/syllabus">Syllabus</Link></li>
+                                <li><Link to="/acadmics/course">Courses</Link></li>
                             </ul>
                         </li>
 

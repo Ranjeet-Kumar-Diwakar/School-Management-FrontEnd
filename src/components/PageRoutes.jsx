@@ -8,6 +8,7 @@ import PrivacyPolicy from "./about-us/PrivacyPolicy"
 import Login from "./Login"
 import Signup from "./Signup"
 import VisionMission from "./about-us/VisionMission"
+import Curriculum from "./Acadmics/Curriculum"
 
 
 const PageRoutes = () => {
@@ -22,6 +23,8 @@ const PageRoutes = () => {
                     <Route path="/about/infrastructure" element={<Infarastructure />}/>
                     <Route path="/about/privacy-policy" element={<PrivacyPolicy />}/>
                     <Route path="/about/vision-mission" element={<VisionMission />}/>
+                    <Route path="/acadmics/curriculum" element={<Curriculum />}/>
+
                 </Route>
 
                 <Route path="/login" element={<Login />}/>

@@ -8,6 +8,11 @@
     height: 70vh;
     object-fit: fill;
 }
+
+.carousel{
+  margin-top: 10px;
+  padding: 10px;
+}
 .overlay{
     position: absolute;
     top: 0;
@@ -23,6 +28,7 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
    overflow-y: hidden;
+   z-index: 1;
 }
 
 .overlay-text{
