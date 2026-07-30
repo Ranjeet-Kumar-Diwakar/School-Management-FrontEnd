@@ -8,10 +8,6 @@
     margin-top: 15vh;
 }
 
-.curr-container .image-section{
-    /* position: relative; */
-}
-
 .curr-container .image-section img {
     display: block;
     position: absolute;
@@ -20,24 +16,22 @@
     object-fit: fill;
 }
 
-.curr-container .curr-overlay{
+.curr-container .curr-overlay {
     position: absolute;
     width: 100%;
     height: 60vh;
     left: 0;
     right: 0;
-    background: linear-gradient(
-        to right,
-        rgba(255,255,255,0.95) 0%,
-        rgba(255,255,255,0.85) 30%,
-        rgba(255,255,255,0.45) 55%,
-        rgba(255,255,255,0) 100%
-    );
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(255, 255, 255, 0.85) 30%,
+            rgba(255, 255, 255, 0.45) 55%,
+            rgba(255, 255, 255, 0) 100%);
     padding: 60px 50px;
 
 }
 
-.curr-container .curr-overlay .address-text{
+.curr-container .curr-overlay .address-text {
     color: #111167;
     font-weight: 600;
     font-size: 15px;
@@ -49,7 +43,7 @@
     font-size: 2.5rem;
 }
 
-.curr-container .curr-intro{
+.curr-container .curr-intro {
     max-width: 400px;
     font-size: 15px;
     color: #111167;
@@ -57,29 +51,34 @@
     line-height: 30px;
 }
 
-.about-curriculum{
+.about-curriculum {
     position: relative;
     top: 62vh;
     padding: 30px;
     text-align: center;
 }
 
-.about-curriculum h1{
+.about-curriculum h1 {
     color: #111167;
 }
 
-.curr-container .curr-structure{
-    position: relative;
-    margin-top: 60vh;
-    
+.about-curriculum p{
+    font-size: 18px;
+    margin: 0px 50px;
 }
 
-.curr-container .curr-structure-heading h1{
+.curr-container .curr-structure {
+    position: relative;
+    margin-top: 60vh;
+
+}
+
+.curr-container .curr-structure-heading h1 {
     text-align: center;
     color: #111167;
 }
 
-.curr-structure .school-type-card{
+.curr-structure .school-type-card {
     height: 60vh;
     width: 25%;
     background-color: #e3e9ec;
@@ -88,7 +87,7 @@
     padding-top: 20px;
 }
 
-.curr-container .curr-structure{
+.curr-container .curr-structure {
     display: flex;
     justify-content: space-evenly;
 }
@@ -99,7 +98,7 @@
     border-radius: 50%;
     background-color: #add8e6;
     text-align: center;
-    margin-left: 110px;
+    margin-left: 130px;
 }
 
 .curr-structure .school-type-card .curr-icon {
@@ -107,16 +106,15 @@
     width: 50px;
     text-align: center;
     margin-top: 10px;
-    /* border-radius: 50%; */
-    /* background-color: red; */
 }
 
-.curr-structure .school-type-card h3, h5 {
+.curr-structure .school-type-card h3,
+h5 {
     color: #111167;
     margin-top: 10px;
 }
 
-.curr-container .offer-subjet-section h1{
+.curr-container .offer-subjet-section h1 {
     margin-top: 20px;
     text-align: center;
     color: #111167;
@@ -127,33 +125,33 @@
 /* tables */
 
 
-.curr-container .subject-table{
+.curr-container .subject-table {
     width: 100%;
     border-collapse: collapse;
     margin: 40px 0;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     font-family: "Poppins", sans-serif;
     margin-left: 7rem;
-    
+
 }
 
-.curr-container .subject-table thead{
+.curr-container .subject-table thead {
     background: #0b2b66;
     color: #fff;
-   
+
 }
 
-.subject-table th{
+.subject-table th {
     padding: 18px 22px;
     text-align: center;
     font-size: 20px;
     font-weight: 600;
 }
 
-.subject-table td{
+.subject-table td {
     padding: 18px 22px;
     border-bottom: 1px solid #e8e8e8;
     font-size: 17px;
@@ -163,26 +161,123 @@
     text-align: left;
 }
 
-.subject-table td:first-child{
+.subject-table td:first-child {
     width: 22%;
     font-weight: 600;
     color: #0b2b66;
 }
 
-.subject-table tbody tr:nth-child(even){
+.subject-table tbody tr:nth-child(even) {
     background: #f8faff;
 }
 
-.subject-table tbody tr:hover{
+.subject-table tbody tr:hover {
     background: #eef5ff;
     transition: 0.3s ease;
 }
 
-.subject-table th:first-child{
-    border-right: 1px solid rgba(255,255,255,.2);
+.subject-table th:first-child {
+    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 
-.subject-table td:first-child{
+.subject-table td:first-child {
     border-right: 1px solid #ececec;
 }
 
+.offer-subject-card-container .teaching-methodology {
+    height: 60vh;
+    width: 30%;
+    background-color: #e3e9ec;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.offer-subject-card-container .teaching-methodology h2 {
+    color: #111167;
+    text-align: center;
+
+}
+
+.offer-subject-card-container .teaching-methodology ul {
+    margin: 20px 30px;
+    font-size: 16px;
+    line-height: 3;
+    color: #111167;
+    font-weight: 450;
+
+}
+
+.offer-subject-card-container .assessment-process {
+    height: 60vh;
+    width: 25%;
+    background-color: #e3e9ec;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.offer-subject-card-container .assessment-process h2{
+    color: #111167;
+    text-align: center;
+
+}
+
+.offer-subject-card-container .assessment-process ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+
+}
+
+.offer-subject-card-container .assessment-process ul .arrow {
+    display: block;
+    font-size: 20px;
+    color: #1f3b8a;
+    
+}
+
+.offer-subject-card-container .assessment-process ul li{
+    width: 200px;
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2edf7;
+    
+}
+
+.offer-subject-card-container .learning-outcomes {
+     height: 60vh;
+    width: 30%;
+    background-color: #e3e9ec;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.offer-subject-card-container .learning-outcomes h2{
+     color: #111167;
+    text-align: center;
+}
+
+.offer-subject-card-container .learning-outcomes ul {
+     margin: 20px 30px;
+    font-size: 16px;
+    line-height: 3;
+    color: #111167;
+    font-weight: 450;
+}
+
+.curr-container .offer-subject-card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.curr-container .conclusion p{
+    margin: 20px 50px;
+    font-size: 18px;
+}

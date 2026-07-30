@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    /* list-style: none; */
 }
+
+
 
 .footer-container {
     min-height: 40vh;
@@ -15,6 +17,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.footer-container ul li {
+    list-style: none;
 }
 
 @media(max-width: 940px){

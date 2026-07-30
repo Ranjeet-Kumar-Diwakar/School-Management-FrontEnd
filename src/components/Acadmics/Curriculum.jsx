@@ -1,6 +1,7 @@
 
 import { BookOpen, GraduationCap, Minus, School } from 'lucide-react'
 import '../../styles/curriculum.css'
+import Footer from '../Footer'
 
 const Curriculum = () => {
 
@@ -126,7 +127,65 @@ const Curriculum = () => {
 
                         </table>
                     </div>
+
+                    {/* card section Teaching methodology, assesment process, learning outcomes */}
+
+                    <div className="offer-subject-card-container">
+                        <div className="teaching-methodology">
+                            <h2>Teaching Methodology</h2>
+                            <ul>
+                                <li>Interactive and student-centered learning</li>
+                                <li>Smart Classrooms and digital learning tools</li>
+                                <li>Project-based and activity based learning</li>
+                                <li>Practical experiments and real-life appplications</li>
+                                <li>Continous assessment and feedback</li>
+                            </ul>
+                        </div>
+
+                        {/* Assessment Process */}
+                        <div className="assessment-process">
+                            <h2>Assessment Process</h2>
+
+                            <ul>
+                                <li>Assignment</li>
+                                <div class="arrow">↓</div>
+
+                                <li>Class Tests</li>
+                                <div class="arrow">↓</div>
+
+                                <li>Projects</li>
+                                <div class="arrow">↓</div>
+
+                                <li>Practical Work</li>
+                                <div class="arrow">↓</div>
+
+                                <li>Final Examination</li>
+                            </ul>
+                        </div>
+
+                        {/* Learning Outcomes */}
+
+                        <div className="learning-outcomes">
+                            <h2>Learning Outcomes</h2>
+                            <ul>
+                                <li>Strong Acadmics Foundation</li>
+                                <li>Critical thinking and problem solving</li>
+                                <li>Effective communication skills</li>
+                                <li>Leadership & Teamwork</li>
+                                <li>Confidence & discipline</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="conclusion">
+                        <p>
+                            At our school the classes are set up to give a mix of smart learning, real life lessons and growing good habits. We try to help students become creative think deeply and learn for life. This way every student is ready to handle what comes next with self confidence being responsible and doing well.
+                        </p>
+                    </div>
+
                 </div>
+
+
 
             </div>
         </div>
