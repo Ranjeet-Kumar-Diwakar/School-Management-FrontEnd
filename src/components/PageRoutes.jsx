@@ -9,6 +9,7 @@ import Login from "./Login"
 import Signup from "./Signup"
 import VisionMission from "./about-us/VisionMission"
 import Curriculum from "./Acadmics/Curriculum"
+import Classes from "./Acadmics/Classes"
 
 
 const PageRoutes = () => {
@@ -24,6 +25,7 @@ const PageRoutes = () => {
                     <Route path="/about/privacy-policy" element={<PrivacyPolicy />}/>
                     <Route path="/about/vision-mission" element={<VisionMission />}/>
                     <Route path="/acadmics/curriculum" element={<Curriculum />}/>
+                    <Route path="/acadmics/classes" element={<Classes />}/>
 
                 </Route>
 

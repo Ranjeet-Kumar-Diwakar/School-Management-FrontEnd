@@ -1,13 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-
 import './styles/navbar.css'
 import './styles/carousel.css'
 import './styles/Footer.css';
-
 import { Routes, Route } from 'react-router-dom'
 import Login from './components/Login'
 import Home from './components/Home'

@@ -1,0 +1,215 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.classes-container{
+    margin-top: 15vh;
+}
+
+.classes-container .classes-image-section{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.classes-image-section .left-side p, h1{
+    max-width: 350px;
+}
+
+.classes-image-section .left-side p{
+    margin: 50px 0px;
+    font-size: 16px;
+}
+
+.classes-image-section .left-side h1{
+    font-size: 3rem;
+}
+
+.classes-image-section .left-side .left-side-text{
+    margin-left: 40px;
+}
+
+.classes-image-section .left-side{
+    height: 60vh;
+    width: 50%;
+    color: white;
+    background-color: #071b4d;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+
+
+
+.classes-image-section .left-side .yellow-line{
+    height: 4px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: yellow;
+    
+
+}
+
+.classes-image-section .right-side{
+    position: relative;
+    height: 60vh;
+    width: 75%;
+    overflow:hidden;
+    margin-left: -140px;
+     clip-path: ellipse(100% 120% at 105% 50%);
+     
+}
+
+
+
+
+.classes-image-section .right-side img{
+    height: 60vh;
+    width: 100%;
+   object-fit: fill;
+   transform:scale(1.08);
+   
+}
+
+.classes-container .about-class-heading {
+    
+    color: #111167;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.classes-container .about-classes-cards{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-classes-cards .classes-card{
+    height: 70vh;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9c8c8;
+    border-radius: 20px;
+    
+}
+
+.about-classes-cards .classes-card img {
+    display: block;
+    height: 50%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.about-classes-cards .classes-card  h2{
+    margin-top: 10px;
+    color: #111167;
+    font-weight: 600;
+}
+
+.about-classes-cards .classes-card ul {
+    padding-left: 50px;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.about-classes-cards .classes-card span {
+    font-weight: bold;
+}
+
+.classes-container .classroom-feature-heading{
+    color: #111167;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.classroom-features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 180px;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.feature-icon svg {
+    width: 56px;
+    height: 56px;
+    stroke-width: 2;
+    color: #111167;
+}
+
+.icon-title p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* class life */
+
+.classes-container .class-life {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.classes-container .class-life .class-life-card {
+    margin-top: 30px;
+}
+
+.classes-container .class-life .class-life-card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.classes-container .class-life .class-life-card p{
+    text-align: center;
+}
+
+.classes-container .class-life .important-note {
+     height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #d9c8c8;
+}
+
+.classes-container .class-life .important-note p{
+    font-size: 16px;
+    padding-top: 40px;
+    text-align: center;
+    color: #111167;
+}
