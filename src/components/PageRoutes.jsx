@@ -10,6 +10,7 @@ import Signup from "./Signup"
 import VisionMission from "./about-us/VisionMission"
 import Curriculum from "./Acadmics/Curriculum"
 import Classes from "./Acadmics/Classes"
+import Department from "./Acadmics/Department"
 
 
 const PageRoutes = () => {
@@ -26,6 +27,7 @@ const PageRoutes = () => {
                     <Route path="/about/vision-mission" element={<VisionMission />}/>
                     <Route path="/acadmics/curriculum" element={<Curriculum />}/>
                     <Route path="/acadmics/classes" element={<Classes />}/>
+                    <Route path="/acadmics/department" element={<Department />}/>
 
                 </Route>
 

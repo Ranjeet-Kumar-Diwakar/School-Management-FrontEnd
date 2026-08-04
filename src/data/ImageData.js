@@ -1,4 +1,4 @@
-import { Armchair, BrushCleaning, Cctv, Computer, Projector, Wifi } from 'lucide-react'
+import { Armchair, BrushCleaning, Calculator, Cctv, Computer, Laptop, Microscope, Music, Projector, Volleyball, Wallpaper, Wifi } from 'lucide-react'
 
 // carousel slides data
 export const slides
@@ -105,7 +105,7 @@ export const studentLifeData = [
         image: "/images/intractLesson.png",
         title: "Interative Lessons"
     },
-    
+
     {
         image: "/images/groupDiscussion.png",
         title: "Group Discussion"
@@ -125,5 +125,56 @@ export const studentLifeData = [
         title: "Presentation"
     },
 
+]
+
+// department card data.
+export const departmentData = [
+    {
+        icon: Microscope,
+        heading: "Science",
+        about: "Nuturing curiosity through experiments, discovery and innovation.",
+        pageUrl: "/acadmics/department/science"
+
+    },
+
+    {
+        icon: Calculator,
+        heading: "Commerce",
+        about: "Building future leaders with knowledge of business, finance and enterpreneurship.",
+        pageUrl: "/acadmics/department/commerce"
+
+    },
+
+    {
+        icon: Wallpaper,
+        heading: "Arts",
+        about: "Encouraging creativity, expression and critical thinking through arts.",
+        pageUrl: "/acadmics/department/arts"
+
+    },
+
+    {
+        icon: Laptop,
+        heading: "Computer Science",
+        about: "Empowering students with coding, technology and digital skills.",
+        pageUrl: "/acadmics/department/computer-science"
+
+    },
+
+    {
+        icon: Volleyball,
+        heading: "Sports",
+        about: "Building Strength, discipline and teamwork on and off the field.",
+        pageUrl: "/acadmics/department/sports"
+
+    },
+
+     {
+        icon: Music,
+        heading: "Co-Curricular",
+        about: "Developing telants beyond acadmics through clubs, events and activities.",
+        pageUrl: "/acadmics/department/cocuricular"
+
+    }
 ]
 

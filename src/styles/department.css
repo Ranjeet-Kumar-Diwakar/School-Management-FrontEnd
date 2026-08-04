@@ -1,0 +1,122 @@
+.department-container {
+    margin-top: 15vh;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1px;
+    background-color: #e4ebf3;
+    background: url("/images/departmentbg.png");
+    
+}
+
+.department-container .our-department{
+    height: 70vh;
+    width: 50%;
+    background-color: #fff;
+    margin-top: 15vh;
+    margin-left: 5%;
+    border-radius: 20px;
+    padding: 15px;
+    gap: 20px;
+
+}
+
+.department-container .our-department .department-path p {
+    color: #111167;
+    font-weight: 600;
+}
+
+.department-container .our-department h1{
+    color: #2727b0;
+    font-size: 2.3rem;
+    margin: 30px 2rem;
+}
+
+.department-container .our-department h3{
+    color: #4cb41c;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.department-container .our-department .yellow-line{
+    margin-left: 20px;
+}
+
+.department-container .our-department p{
+    margin-top: 5px;
+    max-width: 100%;
+    text-wrap: wrap;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.department-container .department-cards{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.department-container .department-cards .department-card{
+    height: 60vh;
+    width: 15%;
+    margin-top: 20px;
+    padding-top: 15px;
+    background-color: #fdfdff;
+    border-radius: 20px;
+}
+
+.department-cards .department-card .even-icon,
+.department-cards .department-card .odd-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.department-cards .department-card .even-icon {
+    background-color: #174EA6; /* Blue */
+}
+
+.department-cards .department-card .odd-icon {
+    background-color: #F4B400; /* Golden */
+}
+
+.department-cards .department-card .icon-body {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.department-cards .department-card .icon .icon-body{
+    height: 50px;
+    width: 50px;
+}
+
+.department-cards .department-card h3{
+    text-align: center;
+    color: #111167;
+}
+
+.department-cards .department-card p{
+    text-align: center;
+    /* line-height: 1.6; */
+    min-height: 120px;
+}
+
+.department-cards .department-card .right-arrow{
+    color: red;
+}
+
+
+.department-cards .department-card a {
+    margin: 60px;
+    padding: 10px 0px; 
+    text-decoration: none;
+}
+
+

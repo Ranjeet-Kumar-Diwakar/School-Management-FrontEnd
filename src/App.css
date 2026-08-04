@@ -69,3 +69,12 @@
 .page-content{
     padding-top: 15vh;
 }
+
+.yellow-line{
+    height: 4px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #b7b72a;
+    
+
+}
