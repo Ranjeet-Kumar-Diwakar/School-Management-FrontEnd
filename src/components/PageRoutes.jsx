@@ -11,6 +11,7 @@ import VisionMission from "./about-us/VisionMission"
 import Curriculum from "./Acadmics/Curriculum"
 import Classes from "./Acadmics/Classes"
 import Department from "./Acadmics/Department"
+import DashboardLayout from "../dashboard/components/layout/DashboardLayout"
 
 
 const PageRoutes = () => {
@@ -33,6 +34,7 @@ const PageRoutes = () => {
 
                 <Route path="/login" element={<Login />}/>
                 <Route path="/Signup" element={<Signup />}/>
+                <Route path="/dashboard" element={<DashboardLayout />}/>
             </Routes>
         </div>
     )

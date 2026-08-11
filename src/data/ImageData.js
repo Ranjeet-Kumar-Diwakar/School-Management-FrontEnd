@@ -1,4 +1,5 @@
 import { Armchair, BrushCleaning, Calculator, Cctv, Computer, Laptop, Microscope, Music, Projector, Volleyball, Wallpaper, Wifi } from 'lucide-react'
+import useAuth from '../context/useAuth'
 
 // carousel slides data
 export const slides
@@ -178,3 +179,6 @@ export const departmentData = [
     }
 ]
 
+
+const {permissions, user} = useAuth;
+console.log(user);

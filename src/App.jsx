@@ -19,14 +19,15 @@ import Carousel from './components/Carousel'
 import MidSection from './components/MidSection'
 import Footer from './components/Footer'
 import PageRoutes from './components/PageRoutes'
+import AuthProvider from './context/AuthProvider';
 
 function App() {
 
 
   return (
-    <div>
+    <AuthProvider>
       <PageRoutes />
-    </div >
+    </AuthProvider>
   )
 }
 

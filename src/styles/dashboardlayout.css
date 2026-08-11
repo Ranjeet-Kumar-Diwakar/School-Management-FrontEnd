@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.dashboard-sidebar{
+    position: relative;
+    width: 13%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+    color: white;
+    background-color: #070757;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.dashboard-sidebar .school-img img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.dashboard-sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.dashboard-sidebar ul li {
+    list-style: none;
+    margin:  20px 0px;
+    cursor: pointer;
+}
+
+.dashboard-sidebar .sidebar-link {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard-sidebar .sidebar-link-active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* =========================
+   Dashboard Navbar
+========================= */
+
+.dashboard-navbar {
+    position: absolute;
+    top: 0;
+    left: 13%;
+    height: 72px;
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+    box-sizing: border-box;
+}
+
+.dashboard-navbar .heading h2{
+    position: absolute;
+    top: 15px;
+    left: 2%;
+}
+
+
+/* =========================
+   Search Box
+========================= */
+
+.dashboard-navbar .search-bar {
+    width: 320px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+.dashboard-navbar .search-bar input {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 16px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-size: 15px;
+    color: #374151;
+
+    box-sizing: border-box;
+}
+
+.dashboard-navbar .search-bar input::placeholder {
+    color: #9ca3af;
+}
+
+.dashboard-navbar .search-bar input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px #6366f11a;
+}
+
+
+/* =========================
+   Right Section
+========================= */
+
+.dashboard-navbar .profile img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 85px;
+}
+
+.dashboard-navbar .profile h5 {
+    position: absolute;
+    top: 13px;
+    right: 45px;
+    text-wrap: wrap;
+}
+
+.dashboard-navbar .profile p{
+     position: absolute;
+    top: 30px;
+}
+
+
+/* =========================
+   Notification
+========================= */
+
+.notification-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    color: #111827;
+
+    transition: all 0.2s ease;
+}
+
+.notification-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.8;
+}
+
+.notification-icon:hover {
+    background-color: #f3f4f6;
+    color: #4f46e5;
+}
+
+
+/* =========================
+   Profile
+========================= */
+
+.profile {
+    min-width: 150px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    cursor: pointer;
+}
+
+.profile h5 {
+    margin: 0;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+.profile p {
+    margin: 4px 0 0;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #6b7280;
+}
+
+/* side bar */
+
