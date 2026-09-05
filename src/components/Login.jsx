@@ -1,13 +1,15 @@
-import { BookOpen, Eye, EyeOff, GraduationCap, Lock, Mail, ShieldCheck, UsersRound } from 'lucide-react'
+import { BookOpen, Eye, EyeOff, GraduationCap, Lock, Mail, ShieldCheck, User, UsersRound } from 'lucide-react'
 import '../styles/Login.css'
 import { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import useAuth from '../context/useAuth';
 
 const Login = () => {
 
     const navigate = useNavigate();
     const loginResponse= null;
+    const {login} = useAuth();
 
     const [showPassword, setShowPassword] = useState(false);
     
@@ -55,9 +57,13 @@ const Login = () => {
 
                 if (response.data.success === true) {
                      localStorage.setItem("accessToken", JSON.stringify(response.data.token));
-                     localStorage.setItem("user", JSON.stringify(response.data.user));
-                     localStorage.setItem("permission", JSON.stringify(response.data.permission));
+                    //  localStorage.setItem("user", JSON.stringify(response.data.user));
+                    //  localStorage.setItem("permission", JSON.stringify(response.data.permission));
+                   
+                     const user = response.data.user;
+                    const permission = response.data.permission;
 
+                    login(user, permission);
                      navigate("/dashboard");
                 }
 

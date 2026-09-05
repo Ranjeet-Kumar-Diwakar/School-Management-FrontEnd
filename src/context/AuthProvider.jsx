@@ -1,57 +1,45 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AuthContext from "./AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const AuthProvider = ({ children }) => {
 
-    const [user, setUser] = useState(() => {
+    const navigate = useNavigate();
+
+    const[user, setUser] = useState(null);
+    const[permission, setPermission] = useState(null);
+    const[token, setToken] = useState(null);
+    // loading state
+
+    useEffect(()=> {
         const storedUser = localStorage.getItem("user");
+        const storedPermission = localStorage.getItem("permission");
+        const token = localStorage.getItem("accessToken");
 
-        return storedUser
-            ? JSON.parse(storedUser)
-            : "user not found";
-    });
+        if(storedUser){
+            setUser(JSON.parse(storedUser));
+        }
 
-    
+        if (storedPermission) {
+            setPermission(JSON.parse(storedPermission));
+        }
 
-    const [token, setToken] = useState(() => {
-        return localStorage.getItem("accessToken");
-    });
+        if(token) {
+            setToken(JSON.parse(token));
+        }
+    },[])
 
-    const [permissions, setPermissions] = useState(() => {
-        const storedPermissions =
-            localStorage.getItem("permission");
+    const login = (userData, permissionData) => {
 
-            return storedPermissions
-            ? JSON.parse(storedPermissions)
-            : [];
-    });
-
-
-    const login = (responseData) => {
-
-
-        const userData = responseData.user;
-        const accessToken = responseData.token;
-        const userPermissions = responseData.permission;
-
+        // update state
         setUser(userData);
-        setToken(accessToken);
-        setPermissions(userPermissions);
+        setPermission(permissionData);
 
-        localStorage.setItem(
-            "user",
-            JSON.stringify(userData)
-        );
+        // update localstorage
 
-        localStorage.setItem(
-            "accessToken",
-            accessToken
-        );
+        localStorage.setItem("user", JSON.stringify(userData));
+        localStorage.setItem("permission", JSON.stringify(permissionData));
 
-        localStorage.setItem(
-            "permissions",
-            JSON.stringify(userPermissions)
-        );
     };
 
 
@@ -59,23 +47,26 @@ const AuthProvider = ({ children }) => {
 
         setUser(null);
         setToken(null);
-        setPermissions([]);
+        setPermission([]);
 
-        localStorage.removeItem("user");
+        localStorage.removeItem("loginData");
         localStorage.removeItem("accessToken");
-        localStorage.removeItem("permissions");
+        localStorage.removeItem("permission");
+        localStorage.removeItem("user");
+        navigate('/login');
+        alert('Logged out successfully')
     };
 
 
     const hasPermission = (permission) => {
-        return permissions.includes(permission);
+        return permission.includes(permission);
     };
 
 
     const value = {
         user,
         token,
-        permissions,
+        permission,
 
         isAuthenticated: !!token,
 

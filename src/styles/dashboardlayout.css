@@ -60,7 +60,6 @@
     width: 87%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 
     padding: 0 28px;
     background-color: #ffffff;
@@ -113,96 +112,100 @@
     box-shadow: 0 0 0 3px #6366f11a;
 }
 
+.dashboard-navbar .notification-icon {
+    margin-right: 100px;
+    color: #8a1313;
+}
+
 
 /* =========================
    Right Section
 ========================= */
 
-.dashboard-navbar .profile img {
-    height: 50px;
-    width: 50px;
+.profile-wrapper {
     position: relative;
-    right: 85px;
 }
 
-.dashboard-navbar .profile h5 {
-    position: absolute;
-    top: 13px;
-    right: 45px;
-    text-wrap: wrap;
-}
-
-.dashboard-navbar .profile p{
-     position: absolute;
-    top: 30px;
-}
-
-
-/* =========================
-   Notification
-========================= */
-
-.notification-icon {
-    width: 42px;
-    height: 42px;
-
+/* Navbar profile */
+.profile-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    gap: 10px;
     cursor: pointer;
+}
 
+/* Profile Image */
+.profile-image {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
     border-radius: 50%;
-
-    color: #111827;
-
-    transition: all 0.2s ease;
+    object-fit: cover;
+    display: block;
 }
 
-.notification-icon svg {
-    width: 24px;
-    height: 24px;
-    stroke-width: 1.8;
-}
-
-.notification-icon:hover {
-    background-color: #f3f4f6;
-    color: #4f46e5;
-}
-
-
-/* =========================
-   Profile
-========================= */
-
-.profile {
-    min-width: 150px;
-
+/* Name + Role */
+.profile-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    min-width: 140px;
+}
 
-    align-items: flex-end;
+.profile-info h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+}
 
+.profile-info span {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 18px;
+}
+
+.profile-arrow {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+
+.profile-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 220px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+
+    box-shadow: 0 5px 20px #00000026;
+
+    z-index: 1000;
+}
+
+.hide-profile-dropdown{
+    display: none;
+}
+
+.profile-dropdown button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    text-align: left;
     cursor: pointer;
 }
 
-.profile h5 {
-    margin: 0;
-
-    font-size: 15px;
-    font-weight: 600;
-
-    color: #111827;
+.profile-dropdown button:hover {
+    background: #f5f5f5;
 }
 
-.profile p {
-    margin: 4px 0 0;
-
-    font-size: 13px;
-    font-weight: 400;
-
-    color: #6b7280;
-}
-
-/* side bar */
-
+.logout-btn {
+    color: red;
+} 
