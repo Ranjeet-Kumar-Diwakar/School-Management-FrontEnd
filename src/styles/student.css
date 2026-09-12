@@ -1,0 +1,24 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.student-container{
+    margin-top: 15vh;
+}
+
+.student-heading{
+    display: flex;
+    min-width: 75vw;
+    justify-content: space-between;
+}
+
+.student-heading-left h2{
+    margin-left: 20px;
+}
+
+.student-heading-right button{
+    margin: 20px;
+}

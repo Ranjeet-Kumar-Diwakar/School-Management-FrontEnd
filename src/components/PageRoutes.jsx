@@ -14,6 +14,7 @@ import Department from "./Acadmics/Department"
 import DashboardLayout from "../dashboard/components/layout/DashboardLayout"
 import ProtectedRoutes from "./ProtectedRoutes"
 import UploadProfileImage from "./UploadProfileImage"
+import Student from "./Student"
 
 
 const PageRoutes = () => {
@@ -34,6 +35,7 @@ const PageRoutes = () => {
                     <Route path="/acadmics/curriculum" element={<Curriculum />} />
                     <Route path="/acadmics/classes" element={<Classes />} />
                     <Route path="/acadmics/department" element={<Department />} />
+                    
 
                 </Route>
 
@@ -45,7 +47,9 @@ const PageRoutes = () => {
 
 
                 <Route element={<ProtectedRoutes />}>
-                    <Route path="/dashboard" element={<DashboardLayout />} />
+                    <Route path="/dashboard" element={<DashboardLayout />}>
+                        <Route path="student" element={<Student />} />
+                    </Route> 
                 </Route>
             </Routes>
         </div>
