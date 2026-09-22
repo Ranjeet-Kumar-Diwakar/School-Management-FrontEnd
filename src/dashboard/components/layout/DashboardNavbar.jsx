@@ -6,56 +6,57 @@ import axios from 'axios';
 
 const DashboardNavbar = () => {
 
-    const { user, permission, logout, token } = useAuth();
+    const { user, permission, logout, token, profileImage } = useAuth();
 
     const [profileDropdown, setProfileDropdown] = useState(false);
-    const [profileImage, setProfileImage] = useState(null);
+    // const [profileImage, setProfileImage] = useState(null);
     const [response, setResponse] = useState(null);
 
-
+    console.log(profileImage);
+    
     // get profile image. call backend api
 
-    const getProfileImage = async () => {
+    // const getProfileImage = async () => {
 
-        try {
-            const apiUrl = import.meta.env.VITE_API_BASE_URL + `/user/get-profile-image/${user?.id}`
+    //     try {
+    //         const apiUrl = import.meta.env.VITE_API_BASE_URL + `/user/get-profile-image/${user?.id}`
 
-            if (!user?.id || !token) {
-                return;
-            }
+    //         if (!user?.id || !token) {
+    //             return;
+    //         }
 
-            console.log("api url" + apiUrl);
+    //         console.log("api url" + apiUrl);
 
-            console.log(token);
+    //         console.log(token);
 
 
-            const response = await axios.get(apiUrl, {
-                headers: {
-                    "Authorization": `Bearer ${token}`
-                },
-                responseType: "blob"
-            })
+    //         const response = await axios.get(apiUrl, {
+    //             headers: {
+    //                 "Authorization": `Bearer ${token}`
+    //             },
+    //             responseType: "blob"
+    //         })
 
-            console.log("response ", response);
-            setResponse(response.blob);
+    //         console.log("response ", response);
+    //         setResponse(response.blob);
 
-            // Convert Blob into browser-readable URL
-            const imageUrl = URL.createObjectURL(response.data);
+    //         // Convert Blob into browser-readable URL
+    //         const imageUrl = URL.createObjectURL(response.data);
 
-            setProfileImage(imageUrl);
+    //         setProfileImage(imageUrl);
 
-            console.log("imge url", imageUrl);
-        } catch (error) {
-            console.error("Error getting profile image", error);
+    //         console.log("imge url", imageUrl);
+    //     } catch (error) {
+    //         console.error("Error getting profile image", error);
 
-        }
+    //     }
 
-    };
+    // };
 
-    useEffect(() => {
-        getProfileImage();
+    // useEffect(() => {
+    //     getProfileImage();
 
-    }, [user?.id, token])
+    // }, [user?.id, token])
 
 
     return (

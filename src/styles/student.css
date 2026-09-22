@@ -1,24 +1,255 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.student-container{
+.student-container {
     margin-top: 15vh;
 }
 
-.student-heading{
+.student-heading {
     display: flex;
     min-width: 75vw;
     justify-content: space-between;
 }
 
-.student-heading-left h2{
+.student-heading-left h2 {
     margin-left: 20px;
 }
 
-.student-heading-right button{
+.student-heading-right button {
     margin: 20px;
+}
+
+.student-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 87vw;
+    background-color: #e4e4f7;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.student-details .student-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding-right: 20px;
+}
+
+.student-details .student-biodata {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student-details .student-biodata span {
+    color: #393838;
+}
+
+.student-details .student-biodata .student-icon {
+    margin-right: 10px;
+}
+
+.student-details .student-biodata button {
+    height: 30px;
+    width: 80px;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+}
+
+.student-details-right-section {
+    width: 40vw;
+    min-height: 150px;
+
+    background: #ffffff;
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 20px 10px;
+}
+
+
+/* Common section */
+.attendence-section,
+.marks-section,
+.rank-section,
+.status-section {
+    height: 135px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Attendance */
+.attendence-section {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.attendence-section h6,
+.marks-section h6,
+.rank-section h6,
+.status-section h6 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #53657a;
+}
+
+.circle-progress-bar {
+    width: 90px;
+    height: 90px;
+    /* margin-top: 12px; */
+}
+
+
+/* Marks */
+.marks-section {
+    width: 25%;
+    border-left: 1px solid #e1e7ef;
+    border-right: 1px solid #e1e7ef;
+}
+
+.marks-section p,
+.rank-section p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    color: #53657a;
+}
+
+.marks-section h5 {
+    margin: 20px 0 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #071d49;
+}
+
+
+/* Rank */
+.rank-section {
+    width: 25%;
+    border-right: 1px solid #e1e7ef;
+}
+
+.rank-section h5 {
+    margin: 20px 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #071d49;
+}
+
+
+/* Status */
+.status-section {
+    width: 25%;
+}
+
+.status-section button {
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #d8f7e4;
+    color: #269653;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    cursor: default;
+}
+
+.all-details-section {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: stretch;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+
+/* Common button */
+.details-tab {
+    position: relative;
+
+    flex: 1;
+
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    padding: 0 20px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #53657d;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* Icon */
+.details-tab svg {
+    width: 22px;
+    height: 22px;
+
+    stroke-width: 2;
+}
+
+
+/* Hover */
+.details-tab:hover {
+    color: #1769ff;
+    background: #f8faff;
+}
+
+
+/* ACTIVE BUTTON */
+.details-tab.active {
+    color: #1769ff;
+    font-weight: 600;
+}
+
+
+/* Blue line under active button */
+.details-tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #1769ff;
 }

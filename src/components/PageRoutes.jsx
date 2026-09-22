@@ -15,6 +15,7 @@ import DashboardLayout from "../dashboard/components/layout/DashboardLayout"
 import ProtectedRoutes from "./ProtectedRoutes"
 import UploadProfileImage from "./UploadProfileImage"
 import Student from "./Student"
+import StudentDetails from "./StudentDetails"
 
 
 const PageRoutes = () => {
@@ -49,6 +50,7 @@ const PageRoutes = () => {
                 <Route element={<ProtectedRoutes />}>
                     <Route path="/dashboard" element={<DashboardLayout />}>
                         <Route path="student" element={<Student />} />
+                        <Route path="student-details" element={<StudentDetails />} />
                     </Route> 
                 </Route>
             </Routes>

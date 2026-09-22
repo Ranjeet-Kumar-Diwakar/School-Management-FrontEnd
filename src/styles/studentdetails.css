@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+}
+
+.student-profile-container {
+    width: 100%;
+    padding: 25px;
+    background: #f5f7fb;
+    min-height: 100%;
+    margin-top: 10vh;
+}
+
+/* Header */
+
+.student-profile-header {
+    margin-bottom: 25px;
+}
+
+.student-profile-header h2 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 600;
+    color: #17175e;
+}
+
+.student-profile-header p {
+    margin-top: 6px;
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Form */
+
+.student-profile-form {
+    width: 100%;
+}
+
+
+/* Sections */
+
+.form-section {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid #e7e9f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.form-section-title {
+    border-bottom: 1px solid #e9e9ef;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+}
+
+.form-section-title h3 {
+    margin: 0;
+    color: #17175e;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* Grid */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 25px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-full {
+    grid-column: 1 / -1;
+}
+
+
+/* Labels */
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #34344d;
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #dcdfe8;
+    border-radius: 7px;
+    padding: 11px 13px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    outline: none;
+    transition: 0.2s ease;
+    font-family: inherit;
+}
+
+.form-group input {
+    height: 43px;
+}
+
+.form-group select {
+    height: 43px;
+    cursor: pointer;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 85px;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #17175e;
+    box-shadow: 0 0 0 2px rgba(23, 23, 94, 0.08);
+}
+
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a4a6b0;
+}
+
+
+/* Buttons */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.cancel-btn,
+.save-btn {
+    height: 42px;
+    padding: 0 22px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cancel-btn {
+    background: #ffffff;
+    color: #555;
+    border: 1px solid #d8dbe5;
+}
+
+.cancel-btn:hover {
+    background: #f2f3f7;
+}
+
+.save-btn {
+    background: #17175e;
+    color: white;
+    border: 1px solid #17175e;
+}
+
+.save-btn:hover {
+    background: #101047;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group-full {
+        grid-column: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .student-profile-container {
+        padding: 15px;
+    }
+
+    .form-section {
+        padding: 16px;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .cancel-btn,
+    .save-btn {
+        flex: 1;
+    }
+}
